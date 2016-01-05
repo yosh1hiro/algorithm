@@ -21,7 +21,7 @@ class Heap
   private
 
     def bubble_up(index)
-      parent_index = (index / 2)
+      parent_index = (index -1) / 2
 
       return if index == 0
       return if @elements[parent_index] <= @elements[index]
